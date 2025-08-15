@@ -58,7 +58,7 @@ export default function NewsPage() {
     }
   ];
 
-  const getSentimentColor = (sentiment: string) => {
+  const getSentimentColor = (sentiment) => {
     switch (sentiment) {
       case 'positive': return 'text-primary border-primary/30 bg-primary/5';
       case 'negative': return 'text-destructive border-destructive/30 bg-destructive/5';
@@ -66,7 +66,7 @@ export default function NewsPage() {
     }
   };
 
-  const getImpactColor = (impact: string) => {
+  const getImpactColor = (impact) => {
     switch (impact) {
       case 'high': return 'text-destructive';
       case 'medium': return 'text-accent';

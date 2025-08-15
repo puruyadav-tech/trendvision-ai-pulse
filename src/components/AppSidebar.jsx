@@ -41,9 +41,9 @@ export function AppSidebar() {
   const location = useLocation();
   const collapsed = state === "collapsed";
 
-  const isActive = (path: string) => location.pathname === path;
+  const isActive = (path) => location.pathname === path;
 
-  const getNavClassName = (path: string) => {
+  const getNavClassName = (path) => {
     const baseClasses = "flex items-center gap-3 px-3 py-2 rounded-lg transition-all duration-200";
     if (isActive(path)) {
       return `${baseClasses} bg-primary/10 text-primary border border-primary/20 neon-glow`;
